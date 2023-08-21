@@ -1,0 +1,8 @@
+{
+  "src/**/*.{ts,tsx}": [
+    "bash -c 'npm run typecheck'",
+    "npm run lint",
+    "npm run prettier",
+    "npm run test --findRelatedTests --bail"
+  ]
+}

@@ -1,0 +1,4 @@
+!.storybook
+build
+public
+**/node_modules/**
