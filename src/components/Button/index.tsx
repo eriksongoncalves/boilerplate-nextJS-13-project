@@ -1,5 +1,4 @@
 import { ButtonHTMLAttributes } from 'react'
-import { twMerge } from 'tailwind-merge'
 import { tv, VariantProps } from 'tailwind-variants'
 
 const variants = tv({
@@ -38,10 +37,12 @@ export default function Button({
     <button
       {...rest}
       disabled={disabled}
-      className={twMerge(
-        variants({ size, disabled, fullWidth }),
-        rest?.className
-      )}
+      className={variants({
+        size,
+        disabled,
+        fullWidth,
+        className: rest?.className
+      })}
     >
       {children}
     </button>
