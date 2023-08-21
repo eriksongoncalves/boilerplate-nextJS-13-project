@@ -15,3 +15,10 @@ export const Default: Story = {
     children: 'Custom text'
   }
 }
+
+export const WithLoading: Story = {
+  args: {
+    children: 'Custom text',
+    loading: true
+  }
+}

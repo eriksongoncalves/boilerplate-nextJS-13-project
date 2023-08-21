@@ -21,4 +21,21 @@ describe('Button component', () => {
 
     expect(mockClick).toBeCalled()
   })
+
+  it('should be render with loading', () => {
+    render(<Button loading>Custom text</Button>)
+
+    const buttonElement = screen.getByText('Custom text')
+
+    expect(buttonElement.querySelector('svg')).toBeTruthy()
+  })
+
+  it('should be override some classname', () => {
+    render(<Button className="bg-red-500">Custom text</Button>)
+
+    const buttonElement = screen.getByText('Custom text')
+
+    expect(buttonElement.classList.contains('bg-lime-600')).toBeFalsy()
+    expect(buttonElement.classList.contains('bg-red-500')).toBeTruthy()
+  })
 })
