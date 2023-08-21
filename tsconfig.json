@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "baseUrl": ".",
-    "outDir": "out",
+    "baseUrl": "./",
+    "outDir": "./dist",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
@@ -23,7 +23,7 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@/components/*": ["./src/components/*"]
+      "@/components/*": ["src/components/*"]
     }
   },
   "include": [
@@ -33,5 +33,5 @@
     ".storybook/*.ts",
     ".next/types/**/*.ts"
   ],
-  "exclude": ["./out/**/*", "node_modules", "coverage", ".next"]
+  "exclude": ["./dist/**/*", "node_modules", "coverage", ".next"]
 }

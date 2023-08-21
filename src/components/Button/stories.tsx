@@ -4,21 +4,15 @@ import Button, { ButtonProps } from '.'
 
 const meta = {
   title: 'Components/Button',
-  component: Button
+  component: Button,
+  args: {
+    size: 'sm',
+    children: 'Custom text',
+    fullWidth: false
+  }
 } satisfies Meta<ButtonProps>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const Default: Story = {
-  args: {
-    children: 'Custom text'
-  }
-}
-
-export const WithLoading: Story = {
-  args: {
-    children: 'Custom text',
-    loading: true
-  }
-}
+export const Default: Story = {}
