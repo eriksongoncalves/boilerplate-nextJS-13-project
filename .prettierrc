@@ -6,5 +6,6 @@
   "semi": false,
   "bracketSpacing": true,
   "singleQuote": true,
-  "endOfLine": "auto"
+  "endOfLine": "auto",
+  "plugins": ["prettier-plugin-tailwindcss"]
 }

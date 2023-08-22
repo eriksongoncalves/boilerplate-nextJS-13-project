@@ -7,7 +7,7 @@ export type SpinnerProps = {
 export default function Spinner({ className }: SpinnerProps) {
   return (
     <svg
-      className={twMerge('animate-spin h-5 w-5 text-white', className)}
+      className={twMerge('h-5 w-5 animate-spin text-white', className)}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"

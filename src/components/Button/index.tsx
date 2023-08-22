@@ -2,7 +2,7 @@ import { ButtonHTMLAttributes } from 'react'
 import { tv, VariantProps } from 'tailwind-variants'
 
 const variants = tv({
-  base: 'bg-lime-600 hover:bg-lime-700 transition rounded-full text-white text-sm font-semibold flex items-center justify-center ',
+  base: 'flex items-center justify-center rounded-full bg-lime-600 text-sm font-semibold text-white transition hover:bg-lime-700',
   variants: {
     size: {
       xs: 'h-6 px-3 text-xs',
