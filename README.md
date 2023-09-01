@@ -21,3 +21,5 @@ npm run dev
 - Commitlint
 - PostCSS
 - Tailwind CSS
+- Zod
+- React Hook Form
