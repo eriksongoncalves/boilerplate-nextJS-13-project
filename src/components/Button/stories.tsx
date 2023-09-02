@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 
 import Button, { ButtonProps } from '.'
 
-const meta = {
+const meta: Meta<ButtonProps> = {
   title: 'Components/Button',
   component: Button,
   args: {
@@ -10,9 +10,8 @@ const meta = {
     children: 'Custom text',
     fullWidth: false
   }
-} satisfies Meta<ButtonProps>
+}
 
 export default meta
-type Story = StoryObj<typeof meta>
 
-export const Default: Story = {}
+export const Default: StoryObj<ButtonProps> = {}
