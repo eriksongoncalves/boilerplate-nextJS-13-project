@@ -1,17 +1,15 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "baseUrl": "./",
     "outDir": "./dist",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -23,7 +21,7 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@/components/*": ["src/components/*"]
+      "@/components/*": ["./src/components/*"]
     }
   },
   "include": [
@@ -33,5 +31,5 @@
     ".storybook/*.ts",
     ".next/types/**/*.ts"
   ],
-  "exclude": ["./dist/**/*", "node_modules", "coverage", ".next"]
+  "exclude": ["./dist/**/*", "node_modules", "coverage"]
 }
