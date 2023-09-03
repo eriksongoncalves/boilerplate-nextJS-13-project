@@ -9,7 +9,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "lint": "next lint src --ext ts,tsx --max-warnings=0",
+    "lint": "eslint src --ext ts,tsx --max-warnings=0",
     "prettier": "prettier --check src/**/*.{ts,tsx}",
     "typecheck": "tsc --project tsconfig.json --noEmit",
     "storybook": "storybook dev -p 6006",
