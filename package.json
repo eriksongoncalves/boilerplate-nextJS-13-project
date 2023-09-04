@@ -9,11 +9,11 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
+    "storybook:dev": "storybook dev -p 6006",
+    "storybook:build": "storybook build",
     "lint": "eslint src --ext ts,tsx --max-warnings=0",
     "prettier": "prettier --check src/**/*.{ts,tsx}",
-    "typecheck": "tsc --project tsconfig.json --noEmit",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "typecheck": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
     "next": "13.4.19",
